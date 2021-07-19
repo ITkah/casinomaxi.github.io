@@ -1,0 +1,24 @@
+.breadcrumbs {
+    margin: 15px 0;
+    .breadcrumbs_wrap {
+        display: flex;
+        align-items: center;
+        a,
+        span {
+            color: #fff;
+            font: 400 1rem 'Inter', sans-serif;
+        }
+        a {
+            position: relative;
+            color: #8b8c8f;
+            display: block;
+            padding-right: 12px;
+            margin-right: 6px;
+            &::after {
+                content: url(../img/bread/bread.svg);
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

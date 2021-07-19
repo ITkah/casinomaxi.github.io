@@ -1,0 +1,187 @@
+.about_page_container {
+    display: grid;
+    grid-template-columns: 1fr 275px;
+    grid-gap: 20px;
+    align-items: start;
+    @media (max-width: 990px) {
+        display: block;
+        grid-gap: 0;
+    }
+}
+
+.about_page_info {
+    padding: 25px;
+    background: #3B404A;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @media (max-width: 576px) {
+        padding: 15px;
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    .about_page_title {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #fff;
+        font: 700 2rem 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            font: 700 1.5rem 'Inter', sans-serif;
+        }
+    }
+    .about_page_text {
+        font: 400 .95rem/22px 'Inter', sans-serif;
+        color: #fff;
+    }
+}
+
+.about_page_title_sm {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    font: 700 1.5rem 'Inter', sans-serif;
+    @media (max-width: 990px) {
+        font: 700 1.25rem 'Inter', sans-serif;
+    }
+}
+
+.about_features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 20px;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    @media (max-width: 990px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 576px) {
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    .about_features_box {
+        display: grid;
+        grid-gap: 20px;
+        padding: 15px;
+        background: #3B404A;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+        border-radius: 5px;
+        grid-template-columns: 30px 1fr;
+    }
+    .about_features_title {
+        margin-bottom: 5px;
+        font: 700 1.2rem 'Inter', sans-serif;
+        color: #38ae56;
+    }
+    .about_features_text {
+        font: 400 .95rem/20px 'Inter', sans-serif;
+        color: #fff;
+    }
+}
+
+.about_team {
+    margin-bottom: 30px;
+    max-width: 985px;
+    width: 100%;
+    box-sizing: border-box;
+    @media (max-width: 1335px) {
+        max-width: 900px;
+    }
+    @media (max-width: 1280px) {
+        max-width: 850px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 1200px) {
+        max-width: 800px;
+    }
+    @media (max-width: 1150px) {
+        max-width: 750px;
+    }
+    @media (max-width: 1100px) {
+        max-width: 700px;
+    }
+    @media (max-width: 1050px) {
+        max-width: 650px;
+    }
+    @media (max-width: 990px) {
+        max-width: none;
+        width: auto;
+    }
+    @media (max-width: 576px) {
+        margin: 0 35px;
+        margin-bottom: 20px;
+    }
+}
+
+.about_team_wrap {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+    @media (max-width: 1280px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 990px) {
+        padding-bottom: 30px;
+    }
+    .swiper-pagination {
+        bottom: 0px;
+        opacity: 0;
+        @media (max-width: 990px) {
+            opacity: 0;
+        }
+    }
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        margin: 0 6px;
+        border: 1px solid rgba(174, 174, 174, 1);
+        background: transparent;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #6CDA75;
+    }
+}
+
+.about_team_box {
+    background: #3B404A;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        height: 160px;
+    }
+    .about_team_info {
+        padding: 15px;
+        @media (max-width: 990px) {
+            padding: 10px;
+        }
+        .name_team {
+            color: #fff;
+            text-align: center;
+            font: 700 1.2rem 'Inter', sans-serif;
+            margin-bottom: 5px;
+            span {
+                font-weight: 400;
+            }
+        }
+        .email {
+            text-align: center;
+            color: #38AE56;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            display: block;
+            font: 400 .95em 'Inter', sans-serif;
+        }
+        .info_team {
+            color: #fff;
+            font: 400 .95rem/22px 'Inter', sans-serif;
+        }
+    }
+}

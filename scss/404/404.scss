@@ -1,0 +1,103 @@
+.found_wrap {
+    background: #010101;
+}
+
+.not_found {
+    height: 90vh;
+    @media (max-width: 576px) {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 40px 0;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .not_found_box_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            @media (max-width: 990px) {
+                grid-row-start: 1;
+                max-width: 80%;
+            }
+        }
+    }
+    .not_found_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        @media (max-width: 990px) {
+            align-items: center;
+        }
+        @media (max-width: 576px) {
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+        .not_title {
+            color: #fff;
+            margin-bottom: 10px;
+            font: 700 5rem 'Inter', sans-serif;
+            @media (max-width: 990px) {
+                font: 700 3rem 'Inter', sans-serif;
+            }
+        }
+        .not_text {
+            margin: 0 auto;
+            color: #fff;
+            margin-bottom: 15px;
+            max-width: 280px;
+            margin-left: 0;
+            text-align: left;
+            font: 400 1.4rem 'Inter', sans-serif;
+            @media (max-width: 990px) {
+                padding: 0 10px;
+                margin: 0 auto;
+                max-width: 200px;
+                margin-bottom: 10px;
+                text-align: center;
+                font: 400 .95rem 'Inter', sans-serif;
+            }
+        }
+        .not_pretext {
+            margin-bottom: 15px;
+            text-align: center;
+            opacity: .5;
+            color: #fff;
+            font: 400 1.4rem 'Inter', sans-serif;
+            @media (max-width: 990px) {
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                font: 400 .95rem 'Inter', sans-serif;
+            }
+        }
+        .not_btn {
+            text-align: center;
+            margin: 0 auto;
+            margin-left: 0;
+            display: inline-block;
+            font: 700 1.125rem 'Inter', sans-serif;
+            color: #fff;
+            padding: 10px 20px;
+            background: #55B56B;
+            border-radius: 3px;
+            @media (max-width: 990px) {
+                margin: 0 auto;
+            }
+        }
+    }
+}

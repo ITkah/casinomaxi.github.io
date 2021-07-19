@@ -1,0 +1,83 @@
+.develop {
+    height: 90vh;
+    @media (max-width: 576px) {
+        height: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .develop_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+        .develop_title {
+            font: 700 3rem 'Inter', sans-serif;
+            margin-bottom: 5px;
+            color: #fff;
+            position: relative;
+            z-index: 9;
+            @media (max-width: 990px) {
+                font: 700 2rem 'Inter', sans-serif;
+            }
+            @media (max-width: 576px) {
+                font: 700 1.5rem 'Inter', sans-serif;
+            }
+            br {
+                @media (max-width: 576px) {
+                    display: none;
+                }
+            }
+        }
+        .develop_text {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 9;
+            color: #fff;
+            max-width: 280px;
+            font: 400 1.2rem 'Inter', sans-serif;
+            @media (max-width: 990px) {
+                font: 400 .95rem 'Inter', sans-serif;
+            }
+        }
+        .develop_btn {
+            text-align: left;
+            display: inline-block;
+            position: relative;
+            z-index: 9;
+            font: 700 1.125rem 'Inter', sans-serif;
+            color: #fff;
+            padding: 10px 20px;
+            background: #55B56B;
+            border-radius: 3px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            right: -60px;
+            top: 17%;
+            @media (max-width: 576px) {
+                right: 0;
+                top: 0;
+                position: relative;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        min-height: auto!important;
+    }
+}
