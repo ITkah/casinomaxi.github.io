@@ -275,7 +275,7 @@
         color: #fff;
         max-width: 750px;
         margin: 0 auto;
-        font: .95rem/21px "400";
+        font: .95rem/23px "400";
     }
     .best_all_wrap {
         display: grid;
@@ -737,7 +737,7 @@
         max-width: 900px;
         margin: 0 auto;
         margin-bottom: 10px;
-        font: .95rem/21px "400";
+        font: .95rem/23px "400";
     }
     .tabs__caption {
         display: flex;
@@ -852,10 +852,73 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
         display: flex;
+        position: relative;
+        overflow: hidden;
         border: 1px solid #808297;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        &:hover {
+            .output_back {
+                transform: translateX(0);
+            }
+        }
+        .output_back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 9;
+            background: #27293D;
+            padding: 5px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: .3s;
+            transform: translateX(-110%);
+            .output_title {
+                text-align: center;
+                margin-bottom: 7px;
+                font: .8rem "400"; 
+                color: #54ed99;
+                display: block;
+            }
+            .output_wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5px;
+                margin-bottom: 20px;
+                .output_item_title {
+                    color: #ADAFBA;
+                    font: .75rem "400"; 
+                    margin-bottom: 5px;
+                }
+                .ouput_item_text {
+                    color: #fff;
+                    font: .75rem/16px "400"; 
+                }
+            }
+            .output_back_btn {
+                text-transform: uppercase;
+                background: #FFD200;
+                border-radius: 3px;
+                padding: 10px;
+                width: 85%;
+                margin: 0 auto;
+                display: block;
+                color: #000;
+                font: 1rem "700";
+                box-sizing: border-box;
+                text-align: center;
+                margin-bottom: 5px;
+                transition: .2s;
+                box-shadow: 0px 0px 15px rgba(255, 210, 0, 0.4);
+                margin-bottom: 10px;
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+        }
         .generate_casino_img {
             background: #fff;
             border-radius: 5px 5px 0 0;
@@ -1032,7 +1095,7 @@
         }
         .half_text {
             color: #FFF;
-            font: .95rem/125% "400";
+            font: .95rem/150% "400";
             opacity: .9;
             margin-bottom: 5px;
             @media (max-width: 990px) {
@@ -1080,7 +1143,7 @@
                 }
                 p {
                     color: #FFF;
-                    font: .95rem/125% "400";
+                    font: .95rem/150% "400";
                     opacity: .9;
                     margin-bottom: 5px; 
                     @media (max-width: 990px) {

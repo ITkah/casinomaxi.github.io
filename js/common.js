@@ -7,7 +7,7 @@ $.fn.extend({
 $(".best_quick a").on("click", function(e){
     e.preventDefault();
     $(this).toggleClass("active_quick");
-    $(".quick_facts_hide").slideToggle(200);
+    $(this).parent().siblings(".quick_facts_hide").slideToggle(200);
 });
 
 $(".unchor").on("click","a", function (event) {

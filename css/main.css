@@ -1275,7 +1275,7 @@ header {
   color: #fff;
   max-width: 750px;
   margin: 0 auto;
-  font: .95rem/21px "400"; }
+  font: .95rem/23px "400"; }
 
 .best_all .best_all_wrap {
   display: grid;
@@ -1785,7 +1785,7 @@ header {
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 10px;
-    font: .95rem/21px "400"; }
+    font: .95rem/23px "400"; }
   .generate_casino .tabs__caption {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1920,6 +1920,8 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    overflow: hidden;
     border: 1px solid #808297;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1931,6 +1933,79 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     cursor: pointer; }
+    .generate_casino .generate_casino_box:hover .output_back {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
+    .generate_casino .generate_casino_box .output_back {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      z-index: 9;
+      background: #27293D;
+      padding: 5px 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: translateX(-110%);
+          -ms-transform: translateX(-110%);
+              transform: translateX(-110%); }
+      .generate_casino .generate_casino_box .output_back .output_title {
+        text-align: center;
+        margin-bottom: 7px;
+        font: .8rem "400";
+        color: #54ed99;
+        display: block; }
+      .generate_casino .generate_casino_box .output_back .output_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin-bottom: 20px; }
+        .generate_casino .generate_casino_box .output_back .output_wrap .output_item_title {
+          color: #ADAFBA;
+          font: .75rem "400";
+          margin-bottom: 5px; }
+        .generate_casino .generate_casino_box .output_back .output_wrap .ouput_item_text {
+          color: #fff;
+          font: .75rem/16px "400"; }
+      .generate_casino .generate_casino_box .output_back .output_back_btn {
+        text-transform: uppercase;
+        background: #FFD200;
+        border-radius: 3px;
+        padding: 10px;
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+        color: #000;
+        font: 1rem "700";
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        -webkit-box-shadow: 0px 0px 15px rgba(255, 210, 0, 0.4);
+                box-shadow: 0px 0px 15px rgba(255, 210, 0, 0.4);
+        margin-bottom: 10px; }
+        .generate_casino .generate_casino_box .output_back .output_back_btn:hover {
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
     .generate_casino .generate_casino_box .generate_casino_img {
       background: #fff;
       border-radius: 5px 5px 0 0;
@@ -2144,7 +2219,7 @@ header {
           font: 1.5rem "700"; } }
     .half_info .half_info_wrap .half_text {
       color: #FFF;
-      font: .95rem/125% "400";
+      font: .95rem/150% "400";
       opacity: .9;
       margin-bottom: 5px; }
       @media (max-width: 990px) {
@@ -2200,7 +2275,7 @@ header {
         margin-bottom: 5px; }
       .half_info .half_info_wrap .half_item .half_redactor p {
         color: #FFF;
-        font: .95rem/125% "400";
+        font: .95rem/150% "400";
         opacity: .9;
         margin-bottom: 5px; }
         @media (max-width: 990px) {
