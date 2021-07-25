@@ -281,7 +281,7 @@
         flex-direction: column;
         @media (max-width: 1280px) {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
         .sidebar_fact_wrap {
             padding: 10px 15px;

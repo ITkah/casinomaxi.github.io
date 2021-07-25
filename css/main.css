@@ -7901,7 +7901,7 @@ s textarea::-webkit-input-placeholder {
     @media (max-width: 1280px) {
       .casno_main .casino_card_sidebar {
         display: grid;
-        grid-template-columns: 1fr 1fr; } }
+        grid-template-columns: 1fr; } }
     .casno_main .casino_card_sidebar .sidebar_fact_wrap {
       padding: 10px 15px;
       -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
