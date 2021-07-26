@@ -8290,7 +8290,10 @@ s textarea::-webkit-input-placeholder {
       margin-bottom: 20px;
       -webkit-transition: .3s;
       -o-transition: .3s;
-      transition: .3s; }
+      transition: .3s;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       .casino_page .casino_page_output .casino_exclusive:hover {
         border-color: #FFD200; }
       @media (max-width: 990px) {
@@ -8410,7 +8413,10 @@ s textarea::-webkit-input-placeholder {
       @media (max-width: 990px) {
         .casino_page .casino_page_output .casino_more_output {
           grid-template-columns: 1fr 1fr;
-          grid-gap: 10px; } }
+          grid-gap: 10px;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; } }
       .casino_page .casino_page_output .casino_more_output a {
         display: -webkit-box;
         display: -webkit-flex;
@@ -8534,7 +8540,8 @@ s textarea::-webkit-input-placeholder {
           margin-bottom: 10px; }
           @media (max-width: 990px) {
             .casino_page .casino_page_output .casino_free .casino_free_info .title {
-              font: 1.125rem "700"; } }
+              font: 1.125rem "700";
+              padding: 0 15px; } }
         .casino_page .casino_page_output .casino_free .casino_free_info .ts {
           font: .75rem "400";
           color: #ADAFBA; }
@@ -8585,7 +8592,10 @@ s textarea::-webkit-input-placeholder {
       margin-bottom: 20px;
       background: #27293D;
       border-radius: 7px;
-      padding: 15px; }
+      padding: 15px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       .casino_page .casino_page_output .casino_device .casino_device_title {
         text-align: center;
         color: #fff;
@@ -8650,7 +8660,10 @@ s textarea::-webkit-input-placeholder {
       padding: 15px;
       background: #333653;
       margin-bottom: 20px;
-      border-radius: 7px; }
+      border-radius: 7px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       .casino_page .casino_page_output .casino_table .casino_table_titles {
         font: 1.2rem "700";
         color: #fff;
@@ -8745,6 +8758,9 @@ s textarea::-webkit-input-placeholder {
       margin-bottom: 15px;
       border: 1px solid #FFD200;
       background: #27293D;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       border-radius: 7px; }
       .casino_page .casino_page_output .casino_conclus .casino_conclus_title {
         margin-bottom: 15px;

@@ -661,6 +661,8 @@
             position: relative;
             margin-bottom: 20px;
             transition: .3s;
+            width: 100%;
+            box-sizing: border-box;
             &:hover {
                 border-color: #FFD200;
             }
@@ -766,6 +768,8 @@
             @media (max-width: 990px) {
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
+                width: 100%;
+                box-sizing: border-box;
             }
             a {
                 display: flex;
@@ -866,6 +870,7 @@
                     margin-bottom: 10px;
                     @media (max-width: 990px) {
                         font: 1.125rem "700";
+                        padding: 0 15px;
                     }
                 }
                 .ts {
@@ -912,6 +917,8 @@
             background: #27293D;
             border-radius: 7px;
             padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
             .casino_device_title {
                 text-align: center;
                 color: #fff;
@@ -968,6 +975,8 @@
             background: #333653;
             margin-bottom: 20px;
             border-radius: 7px;
+            width: 100%;
+            box-sizing: border-box;
             .casino_table_titles {
                 font: 1.2rem "700";
                 color: #fff;
@@ -1073,6 +1082,8 @@
             margin-bottom: 15px;
             border: 1px solid #FFD200;
             background: #27293D;
+            width: 100%;
+            box-sizing: border-box;
             border-radius: 7px;
             .casino_conclus_title {
                 margin-bottom: 15px;
