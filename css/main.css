@@ -7775,6 +7775,11 @@ s textarea::-webkit-input-placeholder {
               justify-content: space-between;
       margin-bottom: 10px;
       position: relative; }
+      @media (max-width: 320px) {
+        .casno_main .casino_card_item .casino_card_list {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 10px; } }
       .casno_main .casino_card_item .casino_card_list .mob_card {
         display: none;
         border-radius: 5px;
@@ -7785,9 +7790,14 @@ s textarea::-webkit-input-placeholder {
           .casno_main .casino_card_item .casino_card_list .mob_card {
             display: block;
             margin-right: 10px; } }
+        @media (max-width: 320px) {
+          .casno_main .casino_card_item .casino_card_list .mob_card {
+            margin: 0;
+            width: 100%;
+            height: 200px; } }
       @media (max-width: 1024px) {
         .casno_main .casino_card_item .casino_card_list .jack {
-          right: -40px;
+          right: -35px;
           top: -50px;
           position: absolute;
           height: 75px;
@@ -7883,7 +7893,11 @@ s textarea::-webkit-input-placeholder {
       .casno_main .casino_card_item .casino_rait_wrap .casino_rait_item {
         display: grid;
         grid-template-columns: 120px 1fr;
-        grid-gap: 10px; }
+        grid-gap: 10px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .casno_main .casino_card_item .casino_rait_wrap .casino_rait_item p {
           font: .95rem "400";
           color: #FFF;
@@ -7947,6 +7961,9 @@ s textarea::-webkit-input-placeholder {
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-gap: 5px;
           max-width: 200px; }
+          .casno_main .casino_card_sidebar .sidebar_fact_wrap .sidebar_fact_item .fact_img_wrap img {
+            margin: 0 auto;
+            display: block; }
           .casno_main .casino_card_sidebar .sidebar_fact_wrap .sidebar_fact_item .fact_img_wrap img:nth-child(n+8) {
             display: none; }
           .casno_main .casino_card_sidebar .sidebar_fact_wrap .sidebar_fact_item .fact_img_wrap p {
@@ -9181,6 +9198,9 @@ s textarea::-webkit-input-placeholder {
   position: absolute;
   left: 8.5px;
   top: 8.5px; }
+  @media (max-width: 990px) {
+    .circle-chart__percent {
+      top: 9.5px; } }
 
 .success-stroke {
   stroke: #00C851; }
@@ -9223,6 +9243,37 @@ s textarea::-webkit-input-placeholder {
 .circle-chart__background {
   stroke: #333653;
   stroke-width: 2; }
+
+.progress {
+  background: #333653;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 100px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8px;
+  width: 100%; }
+
+.progress-value {
+  -webkit-animation: load 3s normal forwards;
+          animation: load 3s normal forwards;
+  border-radius: 100px;
+  background: #17eba8;
+  height: 5px;
+  width: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 .sidebar {
   margin-bottom: 20px; }
