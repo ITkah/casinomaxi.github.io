@@ -531,10 +531,10 @@ $(".show_sidebar_link").on("click", function(e) {
 
 
 
-var num = parseInt($.cookie("visit") || 0) + 1;
-$.cookie("visit", num, { expires: 1 });
-if (num == 1) {
-    setTimeout(callCook, 1500);
-} else {
-    console.log("Куки сохранены");
-}
+// var num = parseInt($.cookie("visit") || 0) + 1;
+// $.cookie("visit", num, { expires: 1 });
+// if (num == 1) {
+//     setTimeout(callCook, 1500);
+// } else {
+//     console.log("Куки сохранены");
+// }

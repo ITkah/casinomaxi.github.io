@@ -1,0 +1,148 @@
+.catalog_soft_top {
+    .soft_top_title {
+        font: 2rem "700";
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            margin-bottom: 5px;
+            font: 1.625rem "700";
+        }
+        span {
+            color: #52ed99;
+        }
+    }
+    .soft_top_text {
+        color: #FFF;
+        opacity: .9;
+        text-align: center;
+        font: 1rem/24px "400";
+    }
+}
+
+
+.soft_favorite {
+    .soft_favorite_title {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        font: 1.75rem "700";
+        @media (max-width: 576px) {
+            font: 1.5rem "700";
+        }
+    }
+    .soft_favorite_text {
+        text-align: center;
+        color: #fff;
+        max-width: 750px;
+        margin: 0 auto;
+        font: .95rem/20px "400";
+        margin-bottom: 10px;
+    }
+    .soft_favorite_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .soft_favorite_box {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            background: #27293d;
+            .soft_favorite_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #3b3d43;
+                padding: 20px 30px;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .soft_favorite_box {
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .soft_title {
+                    text-align: center;
+                    margin-bottom: 7px;
+                    color: #fff;
+                    font: .95rem "400";
+                    display: block;
+                }
+                .soft_games {
+                    display: block;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    color: #68e5a3;
+                    font: .95rem "400";
+                }
+                .soft_btn {
+                    padding: 8px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: center;
+                    background: #FFD200;
+                    color: #000;
+                    font: 1.125rem "700";
+                    border-radius: 3px;
+                    transition: .3s;
+                    @media (max-width: 990px) {
+                        font: 1rem "700";    
+                    }
+                    &:hover {
+                        background: #E2BB00;
+                    }
+                }
+            }
+        }
+    }
+    .soft_item_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+        .soft_item {
+            background: #27293D;
+            border: 1px solid #808297;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            display: grid;
+            align-items: center;
+            grid-template-columns: 68px 1fr;
+            padding: 5px 15px;
+            grid-gap: 15px;
+            position: relative;
+            svg {
+                position: absolute;
+                right: 15px;
+                top: 42%;
+            }
+        }
+        .soft_info {
+            margin-bottom: 5px;
+            color: #fff;
+            font: .95rem "400";
+        }
+        .soft_text {
+            color: #fff;
+            font: .75rem "400";
+            opacity: .6;
+        }
+    }
+}

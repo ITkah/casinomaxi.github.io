@@ -1,30 +1,379 @@
-.blog_title {
-    margin: 0;
-    font: 700 2rem 'Inter', sans-serif;
-    margin-bottom: 10px;
+.blog_game {
+    .container {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-top: 1px solid #808297;
+        border-bottom: 1px solid #808297;
+    }
+}
+
+.latest_news {
+    .container {
+        padding-top: 10px;
+        border-top: 1px solid #808297;
+    }  
+}
+
+.top_news_wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr 300px;
+    grid-gap: 25px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .tom_sm_news {
+        @media (max-width: 990px) {
+            margin-bottom: -20px;
+        }
+        .sm_news_title {
+            margin-bottom: 10px;
+            color: #fff;
+            margin-top: -35px;
+            font: 1.2rem "700";
+            @media (max-width: 990px) {
+                margin-top: 0;
+            }
+        }
+        .top_sm_item {
+            margin-bottom: 15px;
+        
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            .latest_news_title {
+                margin-bottom: 5px;
+                color: #fff;
+                display: block;
+                font: 1.2rem/26px "400";
+                transition: .3s;
+                &:hover {
+                    color: #FFD200;
+                }
+                @media (max-width: 990px) {
+                    font: 1.25rem/27px "700";
+                }
+            }
+            .latest_news_info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: 576px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 5px;
+                }
+                .author {
+                    opacity: .5;
+                    font: .95rem "400";
+                    position: relative;
+                    color: #4aed9a;
+                    transition: .3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    &::after {
+                        border-radius: 50%;
+                        content: '';
+                        height: 8px;
+                        width: 8px;
+                        background: #4aed9a;
+                        display: block;
+                        position: absolute;
+                        right: -15px;
+                        top: 5px;
+                        @media (max-width: 990px) {
+                            display: none;
+                        }
+                    }
+                }
+                .data {
+                    opacity: .5;
+                    font: .95rem "400";
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .top_med_news {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .top_med_item {
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            .latest_news_text {
+                color: #fff;
+                opacity: .8;
+                margin-bottom: 15px;
+                font: 1rem/24px "400";
+            }
+            .latest_news_title {
+                margin-bottom: 5px;
+                color: #fff;
+                display: block;
+                font: 1.5rem/30px "700";
+                transition: .3s;
+                &:hover {
+                    color: #FFD200;
+                }
+                @media (max-width: 990px) {
+                    font: 1.25rem/27px "700";
+                }
+            }
+            .latest_news_info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: 576px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 5px;
+                }
+                .author {
+                    opacity: .5;
+                    font: .95rem "400";
+                    position: relative;
+                    color: #4aed9a;
+                    transition: .3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    &::after {
+                        border-radius: 50%;
+                        content: '';
+                        height: 8px;
+                        width: 8px;
+                        background: #4aed9a;
+                        display: block;
+                        position: absolute;
+                        right: -15px;
+                        top: 5px;
+                        @media (max-width: 990px) {
+                            display: none;
+                        }
+                    }
+                }
+                .data {
+                    opacity: .5;
+                    font: .95rem "400";
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .top_big_news {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .latest_news_text {
+            color: #fff;
+            opacity: .8;
+            margin-bottom: 15px;
+            font: 1rem/24px "400";
+        }
+        .latest_news_title {
+            margin-bottom: 5px;
+            color: #fff;
+            display: block;
+            font: 1.5rem/30px "700";
+            transition: .3s;
+            &:hover {
+                color: #FFD200;
+            }
+            @media (max-width: 990px) {
+                font: 1.25rem/27px "700";
+            }
+        }
+        .latest_news_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width: 576px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 5px;
+            }
+            .author {
+                opacity: .5;
+                font: .95rem "400";
+                position: relative;
+                color: #4aed9a;
+                transition: .3s;
+                &:hover {
+                    opacity: 1;
+                }
+                &::after {
+                    border-radius: 50%;
+                    content: '';
+                    height: 8px;
+                    width: 8px;
+                    background: #4aed9a;
+                    display: block;
+                    position: absolute;
+                    right: -15px;
+                    top: 5px;
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+            }
+            .data {
+                opacity: .5;
+                font: .95rem "400";
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.latest_news_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .latest_news_item {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .latest_news_title {
+            margin-bottom: 10px;
+            color: #fff;
+            display: block;
+            font: 1.5rem/30px "700";
+            transition: .3s;
+            &:hover {
+                color: #FFD200;
+            }
+            @media (max-width: 990px) {
+                font: 1.25rem/27px "700";
+            }
+        }
+        .latest_news_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width: 576px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 5px;
+            }
+            .author {
+                opacity: .5;
+                font: .95rem "400";
+                position: relative;
+                color: #4aed9a;
+                transition: .3s;
+                &:hover {
+                    opacity: 1;
+                }
+                &::after {
+                    border-radius: 50%;
+                    content: '';
+                    height: 8px;
+                    width: 8px;
+                    background: #4aed9a;
+                    display: block;
+                    position: absolute;
+                    right: -15px;
+                    top: 5px;
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+            }
+            .data {
+                opacity: .5;
+                font: .95rem "400";
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+.blog_game_title {
+    text-align: left;
+    font: 2rem "700";
+    margin-bottom: 15px;
     color: #fff;
     @media (max-width: 990px) {
-        font: 700 1.56rem 'Inter', sans-serif;
+        font: 1.56rem "700";
+    }
+}
+
+.blog_game_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    @media (max-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog_game_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #808297;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+        background: #27293D;
+        padding:15px 20px;
+        justify-content: center;
+        &:hover {
+            border-color: #FFD200;
+            transition: .3s;
+            p {
+                color: #FFD200;
+            }
+        }
+        svg,img {
+            height: 62px;
+            width: 62px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        p {
+            transition: .3s;
+            font: 1rem "400";
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 
 .blog {
-    .hide_text {
-        height: 65px;
-        overflow: hidden;
-    }
-    .hide_text_active {
-        height: auto;
-    }
-    .show_more {
+    .blog_title {
+        text-align: center;
+        font: 2rem "700";
         margin-bottom: 15px;
-        cursor: pointer;
-        font: 400 .9rem 'Inter', sans-serif;
-        color: #55B56B;
-        margin-bottom: 15px;
-        img {
-            position: relative;
-            top: 1.5px;
+        color: #fff;
+        @media (max-width: 990px) {
+            font: 1.56rem "700";
         }
     }
 }
@@ -220,7 +569,7 @@
         grid-gap: 10px;
     }
     .blog_box {
-        background: #3B404A;
+        background: #27293d;
         box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
         border-radius: 5px;
         overflow: hidden;
@@ -248,25 +597,25 @@
                 padding: 10px;
             }
             .blog_info_title {
-                font: 700 1.2rem 'Inter', sans-serif;
+                font: 700 1.2rem "700";
                 margin-bottom: 8px;
                 color: #fff;
                 @media (max-width: 576px) {
-                    font: 700 1rem 'Inter', sans-serif;
+                    font: 700 1rem "700";
                     margin-bottom: 5px;
                 }
             }
             .blog_info_text {
                 margin-bottom: 35px;
-                font: 400 .9rem/20px 'Inter', sans-serif;
+                font: .9rem/20px '400';
                 height: 60px;
                 overflow: hidden;
                 color: #fff;
+                opacity: .7;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 @media (max-width: 576px) {
-                    font: 400 .75rem/18px 'Inter', sans-serif;
                     margin-bottom: 10px;
                     height: 50px;
                 }
@@ -274,6 +623,7 @@
             .blog_info_data {
                 color: #8b8c8f;
                 opacity: .5;
+                order: -1;
                 order: -1;
                 margin-bottom: 10px;
                 font: 400 .9rem'Inter', sans-serif;
@@ -285,28 +635,6 @@
     }
 }
 
-.blog_btn_more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    a {
-        font: 700 1rem 'Inter', sans-serif;
-        color: #fff;
-        border-radius: 3px;
-        background: #55B56B;
-        padding: 15px 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            margin-left: 5px;
-            position: relative;
-            top: 1px;
-            right: -5px;
-        }
-    }
-}
 
 .pagination {
     display: flex;
@@ -353,185 +681,10 @@
     }
 }
 
-.generate_casino_blog {
-    margin-bottom: 45px;
+
+.blog_sm {
+    grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 990px) {
-        margin-bottom: 25px;
-    }
-    .generate_casino_title {
-        font: 400 1rem 'Inter', sans-serif;
-        text-align: center;
-        margin-bottom: 5px;
-        span {
-            color: #FFCF24;
-            margin-left: 10px;
-            img {
-                position: relative;
-                top: 1.2px;
-            }
-        }
-    }
-    .generate_casino_text {
-        text-align: center;
-        max-width: 720px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        font: 400 .95rem/22px 'Inter', sans-serif;
-        @media (max-width: 990px) {
-            font: 400 .87rem/20px 'Inter', sans-serif;
-        }
-    }
-    .tabs__caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        @media (max-width: 768px) {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 5px;
-            margin-bottom: 15px;
-        }
-        li {
-            color: #000000;
-            opacity: .7;
-            font: 400 1.2rem 'Inter', sans-serif;
-            padding: 8px 12px;
-            cursor: pointer;
-            text-align: center;
-            margin: 0 15px;
-            @media (max-width: 768px) {
-                margin: 0;
-                font: 400 1rem 'Inter', sans-serif;
-            }
-        }
-        .active {
-            color: #4482CD;
-            background: #ECF1FF;
-            border-radius: 3px;
-        }
-    }
-    .generate_casino_wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        @media (max-width: 1100px) {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        @media (max-width: 576px) {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    .generate_casino_box {
-        background: #292A2E;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
-        border-radius: 5px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .generate_casino_img {
-            background: transparent;
-            border-radius: 0;
-            padding: 0;
-            display: block;
-            margin-bottom: 0;
-            height: 100px;
-            overflow: hidden;
-            width: 100%;
-            img {
-                object-fit: cover;
-                max-width: 100%;
-                height: auto;
-                width: 100%;
-            }
-        }
-        .generate_casino_box_info {
-            padding: 10px 15px;
-        }
-        .generate_casino_title {
-            font: 400 .95rem 'Inter', sans-serif;
-            margin-bottom: 5px;
-        }
-        .generate_casino_price {
-            color: #55B56B;
-            text-align: center;
-            margin-bottom: 7px;
-            font: 700 1.2rem 'Inter', sans-serif;
-        }
-        .generate_casino_info {
-            color: #fff;
-            opacity: .5;
-            cursor: pointer;
-            text-align: center;
-            padding-bottom: 5px;
-            font: 400 .75rem 'Inter', sans-serif;
-            text-align: center;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:hover {
-                color: #0185FF;
-            }
-        }
-        .generate_casino_btn {
-            text-transform: uppercase;
-            background: #55B56B;
-            border-radius: 3px;
-            padding: 10px;
-            width: 100%;
-            display: block;
-            color: #fff;
-            font: 700 1rem'Inter', sans-serif;
-            box-sizing: border-box;
-            text-align: center;
-            margin-bottom: 5px;
-            transition: .2s;
-            &:hover {
-                background: #50b658;
-            }
-        }
-    }
-}
-
-.generate_casino_blog {
-    .generate_casino_title {
-        font: 700 1.5rem 'Inter', sans-serif;
-        @media (max-width: 990px) {
-            font: 700 1.3rem 'Inter', sans-serif;
-        }
-    }
-}
-
-.blog_bottom {
-    margin-bottom: 30px;
-    .blog_bottom_wrap {
-        box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
-        background: #3B404A;
-        padding: 25px 35px;
-        @media (max-width: 990px) {
-            padding: 20px 15px;
-        }
-        .blog_bottom_box {
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, .2);
-            .blog_bottom_title {
-                margin-bottom: 10px;
-                color: #fff;
-                font: 700 1.2rem 'Inter', sans-serif;
-            }
-            .blog_bottom_text {
-                margin: 0;
-                color: #fff;
-                font: 400 .95rem/22px 'Inter', sans-serif;
-            }
-        }
-        .blog_bottom_box:last-child {
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
+        grid-template-columns: 1fr 1fr;
     }
 }

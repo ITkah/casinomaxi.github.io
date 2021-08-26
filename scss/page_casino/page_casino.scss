@@ -154,6 +154,7 @@
             grid-template-columns: 1fr;
         }
         .casino_card_img {
+            height: 240px;
             @media (max-width: 990px) {
                 display: none;
             }
@@ -475,52 +476,54 @@
                     margin-right: 5px;
                 }
             }
-            .casino_text {
-                color: #fff;
-                opacity: .8;
-                font: .95rem/130% "400";
-                span {
-                    color: #98CF21;
-                }
-                a {
-                    color: #98CF21;
-                }
-            }
-            .casino_detail {
-                margin: 10px 0;
-                padding: 15px 20px;
-                border-left: 4px solid #98CF21;
-                color: #fff;
-                font: .95rem/130% "400";
-                background: rgba(178, 232, 190, 0.1);
-                @media (max-width: 990px) {
-                    padding: 10px;
-                }
-            }
-            .casino_list {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 5px;
-                margin: 10px 0;
-                li {
-                    color: #FFF;
-                    font: .95rem/130% "400";
+            .casino_redactor {
+                p {
+                    color: #fff;
                     opacity: .8;
-                    position: relative;
-                    padding-left: 15px;
-                    &::after {
-                        content: '';
-                        left: 0;
-                        top: 5px;
-                        height: 7px;
-                        position: absolute;
-                        border-radius: 50%;
-                        width: 7px;
-                        display: block;
-                        background: linear-gradient(180deg, #02EBAD 0%, #B3F080 100%);
+                    font: .95rem/130% "400";
+                    span {
+                        color: #98CF21;
+                    }
+                    a {
+                        color: #98CF21;
                     }
                 }
-            }
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 5px;
+                    margin: 10px 0;
+                    li {
+                        color: #FFF;
+                        font: .95rem/130% "400";
+                        opacity: .8;
+                        position: relative;
+                        padding-left: 15px;
+                        &::after {
+                            content: '';
+                            left: 0;
+                            top: 5px;
+                            height: 7px;
+                            position: absolute;
+                            border-radius: 50%;
+                            width: 7px;
+                            display: block;
+                            background: linear-gradient(180deg, #02EBAD 0%, #B3F080 100%);
+                        }
+                    }
+                }
+                blockquote {
+                    margin: 10px 0;
+                    padding: 15px 20px;
+                    border-left: 4px solid #98CF21;
+                    color: #fff;
+                    font: .95rem/130% "400";
+                    background: rgba(178, 232, 190, 0.1);
+                    @media (max-width: 990px) {
+                        padding: 10px;
+                    }
+                }
+            }   
         }
         .casino_img_wrap {
             display: grid;
@@ -772,9 +775,16 @@
                 box-sizing: border-box;
             }
             a {
+                transition: .3s;
                 display: flex;
                 flex-direction: column;
                 border: 1px solid #333653;
+                &:hover {
+                    border-color: #FFD200;
+                    p {
+                        color: #FFD200;
+                    }
+                }
                 img {
                     max-width: 100%;
                     width: 100%;
@@ -782,6 +792,7 @@
                     margin-bottom: 10px;
                 }
                 p {
+                    transition: .3s;
                     margin-bottom: 10px;
                     padding: 0 5px;
                     text-align: center;
